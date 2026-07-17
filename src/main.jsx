@@ -7,6 +7,8 @@ import Layout from './Layout.jsx'
 import Funds from './Pages/Funds.jsx'
 import Holdings from './Pages/Holdings.jsx'
 import Dashboard from './Pages/Dashboard.jsx'
+import Order from './Pages/Order.jsx'
+import Position from './Pages/Position.jsx'
 
 
 const router = createBrowserRouter([
@@ -15,20 +17,28 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        index:true,
-        element:<Dashboard/>
+        index: true,
+        element: <Dashboard />
       },
       {
         path: 'funds',
         element: <Funds />
       },
       {
-        path:'holdings',
-        element : <Holdings/>
+        path: 'holdings',
+        element: <Holdings />
       },
       {
-        path:'dashboard',
-        element:<Dashboard/>
+        path: 'dashboard',
+        element: <Dashboard />
+      },
+      {
+        path: 'order',
+        element:<Order/>
+      },
+      {
+        path: 'positions',
+        element:<Position/>
       }
     ]
 
