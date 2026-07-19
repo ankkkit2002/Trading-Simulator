@@ -2,7 +2,7 @@
 import NavBar from './components/NavBar/NavBar';
 import { Outlet } from "react-router-dom";
 import Funds from './Pages/Funds/Funds';
-import Holdings from './Pages/Holdings';
+import Holdings from './Pages/Holdings/Holdings';
 
 function Layout() {
     return (

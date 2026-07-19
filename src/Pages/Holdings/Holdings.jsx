@@ -1,3 +1,4 @@
+import "./Holding.css"
 function Holdings() {
     return(
         <div></div>
