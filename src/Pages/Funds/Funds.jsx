@@ -3,7 +3,7 @@ function Funds() {
     return (
         <div>
             <div className="walletLine">
-                <h1 >Virtual Wallet</h1>
+                <h1 id="virtual" >Virtual Wallet</h1>
                 <button id="add">Add Funds</button>
             </div>
 

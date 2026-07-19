@@ -4,9 +4,9 @@
     border: 1px solid grey;
     padding: 20px;
     border-radius: 15px;
-    border-color: rgb(155, 154, 154);
+    border-color: rgb(231, 228, 228);
     font-weight: normal;
-
+    
 }
 
 .virtual {
@@ -15,7 +15,12 @@
     justify-content: space-between;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(81, 80, 80);
+    
 }
+
 
 .margin {
     margin-top: 50px;
@@ -23,6 +28,9 @@
 
     justify-content: space-between;
     margin-bottom: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(81, 80, 80);
 }
 
 .box {
@@ -36,9 +44,12 @@
 
     justify-content: space-between;
     margin-bottom: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(81, 80, 80);
 }
 
-.walletLine{
+.walletLine {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,9 +58,19 @@
     margin-right: auto;
     margin-top: 50px;
 }
-#add{
+
+#add {
     border: 1px solid grey;
     border-radius: 5px;
     width: 100px;
     height: 35px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(8, 161, 8);
+    color: white;
+    
+}
+
+#virtual {
+    color: rgb(114, 110, 110);
 }
