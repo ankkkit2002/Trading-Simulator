@@ -1,10 +1,29 @@
 import "./Fund.css"
 function Funds() {
-    return(
+    return (
         <div>
-            <h1>Funds</h1>
-            <div className="funds_box">
-       
+            <div className="walletLine">
+                <h1 >Virtual Wallet</h1>
+                <button id="add">Add Funds</button>
+            </div>
+
+
+            <div className="box">
+
+                <div className="funds_box">
+                    <div className="virtual">
+                        <span>Virtual Balance </span>
+                        <span>₹ 50,000 </span>
+                    </div>
+                    <div className="margin">
+                        <span>F&O Margin Used</span>
+                        <span>₹ 0.00</span>
+                    </div>
+                    <div className="total">
+                        <span>Total Margin Used</span>
+                        <span>₹ 0.00</span>
+                    </div>
+                </div>
             </div>
         </div>
     )
