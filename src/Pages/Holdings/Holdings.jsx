@@ -1,7 +1,9 @@
 import "./Holding.css"
 function Holdings() {
     return(
-        <div></div>
+        <div>
+            
+        </div>
     )
 }
 export default Holdings;

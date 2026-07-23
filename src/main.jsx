@@ -7,7 +7,7 @@ import Layout from './Layout.jsx'
 import Funds from './Pages/Funds/Funds.jsx'
 import Holdings from './Pages/Holdings/Holdings.jsx'
 import Dashboard from './Pages/Dashboard.jsx'
-import Order from './Pages/Order.jsx'
+import Order from './Pages/Order/Order.jsx'
 import Position from './Pages/Position.jsx'
 
 
