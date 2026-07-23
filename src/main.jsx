@@ -8,7 +8,7 @@ import Funds from './Pages/Funds/Funds.jsx'
 import Holdings from './Pages/Holdings/Holdings.jsx'
 import Dashboard from './Pages/Dashboard.jsx'
 import Order from './Pages/Order/Order.jsx'
-import Position from './Pages/Position.jsx'
+import Position from './Pages/Position/Position';
 
 
 const router = createBrowserRouter([
