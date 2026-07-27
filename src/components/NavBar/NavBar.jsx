@@ -41,7 +41,9 @@ function Navigation() {
                     onClick={()=> setShowMenu(!showMenu)}>
                         👤 <span id="user_name">Ankit</span>
                     </button>
-                     
+                     {showMenu && <div className="overlay"
+                     onClick={()=> setShowMenu(false)}>
+                                 </div>}
                       {showMenu && <ProfileMenu/>}
                 </div>
 

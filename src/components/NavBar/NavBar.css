@@ -8,7 +8,7 @@
 
 
     align-items: center;
-  position: relative;
+    position: relative;
 
 
 }
@@ -31,7 +31,7 @@
 
     align-items: center;
     border: none;
-    background-color: white;
+
     cursor: pointer;
 }
 
@@ -48,23 +48,24 @@
     position: absolute;
     top: 65px;
     right: 0;
-
+z-index: 9999;
+background: white;
     width: 220px;
     height: 200px;
 
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     border: 0.5px solid grey;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+  
     padding: 3px;
 }
 
 .profileMenu button {
     border: none;
-    background: white;
+
     padding: 12px;
     text-align: left;
     cursor: pointer;
@@ -72,8 +73,18 @@
 
 
 }
-.profileMenu :hover{
+
+.profileMenu :hover {
     background-color: rgb(234, 234, 234);
-    
-    
+
+
+}
+.overlay{
+    position: fixed;
+    top: 0;
+  
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+
 }
