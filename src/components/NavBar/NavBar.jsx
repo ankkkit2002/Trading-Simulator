@@ -1,7 +1,24 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css"
+import ProfileMenu from "./ProfileMenu";
+import { useState,useRef,useEffect } from "react";
 
 function Navigation() {
+    const [showMenu, setShowMenu]=useState(false);
+    const profileRef = useRef(null);
+    useEffect(()=>{
+        function handleClick(event) {
+            if (profileRef.current && !profileRef.current.contains(event.target)) {
+                setShowMenu(false)
+            }
+           
+            
+        }
+         document.addEventListener("click", handleClick);
+         return()=>{
+            document.removeEventListener("click", handleClick);
+         }
+    },[]);
     return (
         <div>
 
@@ -19,12 +36,13 @@ function Navigation() {
                     </nav>
                 </div>
 
-                <div id="profile">
-                    <button id="but_profile" type="button">
+                <div id="profile" ref={profileRef}>
+                    <button id="but_profile" type="button"
+                    onClick={()=> setShowMenu(!showMenu)}>
                         👤 <span id="user_name">Ankit</span>
                     </button>
                      
-
+                      {showMenu && <ProfileMenu/>}
                 </div>
 
             </header>
