@@ -4,6 +4,7 @@ function Order() {
         <div className="main">
             <h1>You have no orders today</h1>
             <button>Previous Orders</button>
+            <button></button>
             
         </div>
     )
