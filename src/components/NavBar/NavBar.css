@@ -1,12 +1,14 @@
 #heading {
     margin-right: auto;
     margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: grey;
+
 }
 
 .navigation_bar {
     display: flex;
-
-
     align-items: center;
     position: relative;
 
