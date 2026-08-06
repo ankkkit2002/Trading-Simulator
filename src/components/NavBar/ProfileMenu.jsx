@@ -1,4 +1,5 @@
-import styles from "./NavBar.module.css";
+import styles from "./ProfileMenu.module.css";
+
 function ProfileMenu() {
     return (
         <div className={styles.profileMenu}>
