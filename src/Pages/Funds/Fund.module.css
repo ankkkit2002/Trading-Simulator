@@ -58,7 +58,7 @@
     margin-top: 50px;
 }
 
-#add {
+.add {
     border: 1px solid grey;
     border-radius: 5px;
     width: 100px;
@@ -69,7 +69,8 @@
     color: white;
 
 }
-
-#virtual {
-    color: rgb(114, 110, 110);
+.virtual_wallet{
+    font-size: x-large;
+    color: rgb(113, 113, 113);
+    font-family: Arial, Helvetica, sans-serif;
 }

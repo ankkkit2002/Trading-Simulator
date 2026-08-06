@@ -1,4 +1,4 @@
-#heading {
+.heading {
     margin-right: auto;
     margin-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +15,7 @@
 
 }
 
-#profile {
+.profile {
     position: relative;
     margin-left: auto;
     margin-right: 100px;
@@ -28,7 +28,7 @@
     gap: 50px;
 }
 
-#but_profile {
+.but_profile {
     display: flex;
 
     align-items: center;
@@ -37,11 +37,11 @@
     cursor: pointer;
 }
 
-#first_hr {
+.first_hr {
     margin-top: -10px;
 }
 
-#user_name {
+.user_name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
@@ -50,8 +50,8 @@
     position: absolute;
     top: 65px;
     right: 0;
-z-index: 9999;
-background: white;
+    z-index: 9999;
+    background: white;
     width: 220px;
     height: 200px;
 
@@ -61,7 +61,7 @@ background: white;
     border: 0.5px solid grey;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
+
     padding: 3px;
 }
 
@@ -81,12 +81,18 @@ background: white;
 
 
 }
-.overlay{
+
+.overlay {
     position: fixed;
     top: 0;
-  
+
     width: 100vw;
     height: 100vh;
     z-index: 9998;
 
+}
+
+.nav1 a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
