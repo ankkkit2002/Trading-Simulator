@@ -45,13 +45,13 @@ function Navigation() {
         const value = e.target.value;
         setSearch(value);
         if(value.trim()=== ""){
-            setSuggestions(stocks.slice(0,5));
+            setSuggestions(stocks.slice(0,6));
             return;
         }
         const filtered = stocks.filter(stock =>
             stock.toLowerCase().includes(value.toLowerCase())
         );
-        setSuggestions(filtered.slice(0,5));
+        setSuggestions(filtered.slice(0,6));
     }
 
     return (
@@ -87,8 +87,8 @@ function Navigation() {
             <hr className={styles.first_hr} />
 
             <div className={styles.main_watchlist}>
-                <div ref={searchRef} className={styles.searchContainer}>
-                    <input type="text" placeholder="Search Stocks" value={search} onChange={handleSearch} onFocus={() => setSuggestions(stocks.slice(0,4))} className={styles.search} />
+                <div  className={styles.searchContainer} ref={searchRef}>
+                    <input type="text" placeholder="Search Stocks" value={search} onChange={handleSearch} onFocus={() => setSuggestions(stocks.slice(0,6))} className={styles.search} />
                     
                     {suggestions.length > 0 && (
                         <div className={styles.dropdown}>
