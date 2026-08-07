@@ -3,6 +3,7 @@ import styles from "./NavBar.module.css"
 import ProfileMenu from "./ProfileMenu";
 import { useState, useRef, useEffect } from "react";
 
+
 function Navigation() {
     const [showMenu, setShowMenu] = useState(false);
     const profileRef = useRef(null);
@@ -46,14 +47,14 @@ function Navigation() {
     function handleSearch(e) {
         const value = e.target.value;
         setSearch(value);
-        if(value.trim()=== ""){
-            setSuggestions(stocks.slice(0,6));
+        if (value.trim() === "") {
+            setSuggestions(stocks.slice(0, 6));
             return;
         }
         const filtered = stocks.filter(stock =>
             stock.toLowerCase().includes(value.toLowerCase())
         );
-        setSuggestions(filtered.slice(0,6));
+        setSuggestions(filtered.slice(0, 6));
     }
 
     //for adding stocks from serach box to watchlist
@@ -95,17 +96,17 @@ function Navigation() {
 
             </header>
 
-            <hr className={styles.first_hr} />
+            
 
             <div className={styles.main_watchlist}>
-                <div  className={styles.searchContainer} ref={searchRef}>
-                    <input type="text" placeholder="Search Stocks" value={search} onChange={handleSearch} onFocus={() => setSuggestions(stocks.slice(0,6))} className={styles.search} />
-                    
+                <div className={styles.searchContainer} ref={searchRef}>
+                    <input type="text" placeholder="Search Stocks" value={search} onChange={handleSearch} onFocus={() => setSuggestions(stocks.slice(0, 6))} className={styles.search} />
+
                     {suggestions.length > 0 && (
                         <div className={styles.dropdown}>
                             {suggestions.map((stock) =>
                                 <div key={stock} className={styles.item} onClick={() => {
-                                    
+
                                     setSuggestions([])
                                     addtowatchlist(stock)
                                 }}
@@ -118,12 +119,13 @@ function Navigation() {
                     )}
                 </div>
                 <div className={styles.watchlist}>
-                 {watchlist.map((stock)=>
-                 <div key={stock} className={styles.watchlistItem}>
-                     {stock}
-                 </div>
-                )}
+                    {watchlist.map((stock) =>
+                        <div key={stock} className={styles.watchlistItem}>
+                            {stock}
+                        </div>
+                    )}
                 </div>
+                
             </div>
         </div>
     )

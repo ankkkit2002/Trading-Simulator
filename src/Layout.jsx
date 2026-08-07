@@ -5,12 +5,16 @@ import Funds from './Pages/Funds/Funds';
 import Holdings from './Pages/Holdings/Holdings';
 import Order from './Pages/Order/Order';
 import Position from './Pages/Position/Position';
+import styles from './Layout.module.css';
 
 function Layout() {
     return (
-        <div className='layout' style={{width:"85%", margin: "0 auto"}}>
+        <div className={styles.layout}>
             <NavBar />
-            <Outlet />
+            <div className={styles.pagecontent}>
+                <Outlet />
+            </div>
+
 
         </div>
     )

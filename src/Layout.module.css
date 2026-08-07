@@ -1,0 +1,17 @@
+.pagecontent {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+@media (max-width : 1400px) {
+    .pagecontent {
+        margin-left: 280px;
+    }
+}
+.layout{
+   width: 85%;
+   margin: 0 auto;
+}
