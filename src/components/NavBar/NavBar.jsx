@@ -30,6 +30,8 @@ function Navigation() {
 
     const [search, setSearch] = useState("");
     const [suggestions, setSuggestions] = useState([]);
+    //for adding stocks from serach box to watchlist
+    const [watchlist, setWatchlist] = useState([]);
     const stocks = [
         "RELIANCE",
         "TCS",
@@ -52,6 +54,15 @@ function Navigation() {
             stock.toLowerCase().includes(value.toLowerCase())
         );
         setSuggestions(filtered.slice(0,6));
+    }
+
+    //for adding stocks from serach box to watchlist
+    function addtowatchlist(stock) {
+        if (!watchlist.includes(stock)) {
+            setWatchlist([...watchlist, stock])
+        }
+        setSearch("");
+        setSuggestions([])
     }
 
     return (
@@ -94,8 +105,9 @@ function Navigation() {
                         <div className={styles.dropdown}>
                             {suggestions.map((stock) =>
                                 <div key={stock} className={styles.item} onClick={() => {
-                                    setSearch(stock);
+                                    
                                     setSuggestions([])
+                                    addtowatchlist(stock)
                                 }}
                                 >
                                     {stock}
@@ -106,7 +118,11 @@ function Navigation() {
                     )}
                 </div>
                 <div className={styles.watchlist}>
-
+                 {watchlist.map((stock)=>
+                 <div key={stock} className={styles.watchlistItem}>
+                     {stock}
+                 </div>
+                )}
                 </div>
             </div>
         </div>
