@@ -10,11 +10,11 @@ function Dashboard() {
         {id:4, name: "HDFCBANK", price:860},
         {id:5, name: "BPCL", price:420},
         {id:6, name: "JIO", price:280},
-        {id:6, name: "ADANIGREEN", price:1350},
-        {id:6, name: "NTPC", price:87},
-        {id:6, name: "NHPC", price:320},
-        {id:6, name: "POWERGRID", price:289},
-        {id:6, name: "TECHMAHINDRA", price:2600},
+        {id:7, name: "ADANIGREEN", price:1350},
+        {id:8, name: "NTPC", price:87},
+        {id:9, name: "NHPC", price:320},
+        {id:10, name: "POWERGRID", price:289},
+        {id:11, name: "TECHMAHINDRA", price:2600},
     ])
      useEffect(()=>{
         const interval = setInterval(()=>{

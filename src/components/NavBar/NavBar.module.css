@@ -33,11 +33,13 @@
 .first_hr {
     margin-top: -10px;
 }
+
 .user_name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    
+
 }
+
 .but_profile {
     display: flex;
 
@@ -66,4 +68,46 @@
 .nav1 a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+}
+
+.watchlist {
+    display: flex;
+
+    position: fixed;
+    width: 300px;
+    height: 600px;
+    border: 1px solid grey;
+    margin-top: 50px;
+    border-radius: 10px;
+
+
+}
+
+.main_watchlist {
+    display: flex;
+    margin-left: 30px;
+    position: fixed;
+    overflow-y: auto;
+    margin-top: 50px;
+    
+    
+    
+}
+.main_watchlist h3{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-weight: normal;
+    color: rgb(50, 50, 50);
+    
+    
+}
+.search{
+  width: 300px;
+  border: 1px solid grey;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 10px;
+  
+
 }
