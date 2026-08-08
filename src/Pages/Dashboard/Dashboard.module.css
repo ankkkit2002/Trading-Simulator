@@ -53,9 +53,9 @@
 
 .buttons button:hover {
     background-color: rgb(235, 235, 235);
-  
-   
-  
+
+
+
 
 }
 
@@ -165,32 +165,49 @@
 :global(body.dark-mode) .buttons button {
     background-color: #121212;
     color: rgb(181, 181, 181);
+    border: 1px solid rgb(87, 87, 87);
 }
 
 :global(body.dark-mode) .buttons button:hover {
     background-color: rgb(50, 50, 50);
-  
+
 }
 
 :global(body.dark-mode) .but2 button {
     background-color: #121212;
-     color: rgb(181, 181, 181);
-    border-color: rgb(181, 181, 181);
+    color: rgb(181, 181, 181);
+    border: 1px solid rgb(87, 87, 87);
 }
 
 :global(body.dark-mode) .but2 button:hover {
     background-color: rgb(50, 50, 50);
 }
-:global(body.dark-mode) .label{
-   
+
+:global(body.dark-mode) .label {
+
     color: rgb(190, 188, 188);
 }
-:global(body.dark-mode) .name{
-   color: rgb(190, 188, 188);
+
+:global(body.dark-mode) .name {
+    color: rgb(190, 188, 188);
 }
-:global(body.dark-mode) .stock{
-   color: rgb(190, 188, 188);
+
+:global(body.dark-mode) .stock {
+    color: rgb(190, 188, 188);
 }
-:global(body.dark-mode) .price{
-   color: rgb(190, 188, 188);
+
+:global(body.dark-mode) .price {
+    color: rgb(190, 188, 188);
+}
+
+:global(body.dark-mode) .first_box {
+    border: 1px solid rgb(87, 87, 87);
+}
+
+:global(body.dark-mode) .second_box {
+    border: 1px solid rgb(87, 87, 87);
+}
+
+:global(body.dark-mode) .hr1 {
+    border: 1px solid rgb(81, 80, 80);
 }
