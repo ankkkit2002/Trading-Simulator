@@ -52,10 +52,10 @@
 }
 
 .buttons button:hover {
-    background-color: rgb(177, 215, 177);
-    color: rgb(12, 110, 12);
-    border: none;
-    transform: translateY(-3px);
+    background-color: rgb(235, 235, 235);
+  
+   
+  
 
 }
 
@@ -108,18 +108,19 @@
 .but2 button {
 
     cursor: pointer;
-    border: 1px solid rgb(216, 215, 215);
+    border: 1px solid rgb(128, 128, 128);
     width: 80px;
     height: 25px;
     border-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     background-color: white;
+    color: rgb(82, 80, 80);
 }
 
 .but2 button:hover {
-    background-color: rgb(177, 215, 177);
-    border: none;
+
+    background-color: rgb(235, 235, 235);
     color: rgb(66, 74, 66);
 }
 
@@ -140,20 +141,56 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.stockRow{
+
+.stockRow {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 10px;
-    
+
 }
-.stock{
-  margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: grey;
-}
-.price{
+
+.stock {
+    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    color: grey;
+}
+
+.price {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:global(body.dark-mode) .buttons button {
+    background-color: #121212;
+    color: rgb(181, 181, 181);
+}
+
+:global(body.dark-mode) .buttons button:hover {
+    background-color: rgb(50, 50, 50);
+  
+}
+
+:global(body.dark-mode) .but2 button {
+    background-color: #121212;
+     color: rgb(181, 181, 181);
+    border-color: rgb(181, 181, 181);
+}
+
+:global(body.dark-mode) .but2 button:hover {
+    background-color: rgb(50, 50, 50);
+}
+:global(body.dark-mode) .label{
+   
+    color: rgb(190, 188, 188);
+}
+:global(body.dark-mode) .name{
+   color: rgb(190, 188, 188);
+}
+:global(body.dark-mode) .stock{
+   color: rgb(190, 188, 188);
+}
+:global(body.dark-mode) .price{
+   color: rgb(190, 188, 188);
 }

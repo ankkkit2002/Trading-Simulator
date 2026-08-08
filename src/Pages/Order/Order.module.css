@@ -24,3 +24,6 @@
     color: grey;
     font-family: Arial, Helvetica, sans-serif;
 }
+:global(body.dark-mode) .but{
+    background-color: #121212;
+}

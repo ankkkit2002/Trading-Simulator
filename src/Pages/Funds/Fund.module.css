@@ -74,3 +74,25 @@
     color: rgb(113, 113, 113);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+:global(body.dark-mode) .virtual_wallet{
+    color: white;
+    
+}
+:global(body.dark-mode) .funds_box{
+    border: 1px solid rgb(74, 73, 73);
+   
+}
+:global(body.dark-mode) .virtual{
+   color: grey;
+   
+}
+:global(body.dark-mode) .margin{
+   color: grey;
+   
+}
+:global(body.dark-mode) .total{
+   color: grey;
+   
+}
