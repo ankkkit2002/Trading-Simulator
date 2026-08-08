@@ -74,11 +74,11 @@ function Navigation() {
                 <div>
 
                     <nav className={styles.nav1} >
-                        <NavLink to="/dashboard" style={{ color: "#4d4c4c", textDecoration: "none" }} >Dashboard</NavLink>
-                        <NavLink to="/holdings" style={{ color: "#4d4c4c", textDecoration: "none" }}>Holdings</NavLink>
-                        <NavLink to="/positions" style={{ color: "#4d4c4c", textDecoration: "none" }}>Positions</NavLink>
-                        <NavLink to="/order" style={{ color: "#4d4c4c", textDecoration: "none" }}>Order</NavLink>
-                        <NavLink to="/funds" style={{ color: "#4d4c4c", textDecoration: "none" }}>Funds</NavLink>
+                        <NavLink to="/dashboard" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link} >Dashboard</NavLink>
+                        <NavLink to="/holdings" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>Holdings</NavLink>
+                        <NavLink to="/positions" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>Positions</NavLink>
+                        <NavLink to="/order" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>Order</NavLink>
+                        <NavLink to="/funds" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>Funds</NavLink>
 
                     </nav>
                 </div>
@@ -96,7 +96,7 @@ function Navigation() {
 
             </header>
 
-            
+
 
             <div className={styles.main_watchlist}>
                 <div className={styles.searchContainer} ref={searchRef}>
@@ -125,7 +125,7 @@ function Navigation() {
                         </div>
                     )}
                 </div>
-                
+
             </div>
         </div>
     )
