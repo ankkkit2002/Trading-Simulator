@@ -1,9 +1,11 @@
 .pagecontent {
-    margin-left: 320px;
-    width: calc(100% - 320px);
+    margin-left: 351px;
+    width: calc(100% - 350px);
+    min-height: calc(100vh - 50px);
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 70px;
+    margin-top: 50px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width : 1400px) {
@@ -11,7 +13,8 @@
         margin-left: 280px;
     }
 }
-.layout{
-   width: 85%;
-   margin: 0 auto;
+
+.layout {
+    width: 85%;
+    margin: 0 auto;
 }
