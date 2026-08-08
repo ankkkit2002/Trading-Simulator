@@ -66,6 +66,14 @@ function Navigation() {
         setSuggestions([])
     }
 
+
+    // for dark mode
+    const [darkMode, setDarkMode]= useState(false);
+    function toggleDarkMode() {
+        setDarkMode(prev => !prev);
+        document.body.classList.toggle("dark-mode")
+    }
+
     return (
         <div>
 
@@ -91,7 +99,7 @@ function Navigation() {
                     {showMenu && <div className={styles.overlay}
                         onClick={() => setShowMenu(false)}>
                     </div>}
-                    {showMenu && <ProfileMenu />}
+                    {showMenu && <ProfileMenu toggleDarkMode ={toggleDarkMode} />}
                 </div>
 
             </header>

@@ -1,11 +1,11 @@
 import styles from "./ProfileMenu.module.css";
 
-function ProfileMenu() {
+function ProfileMenu({toggleDarkMode}) {
     return (
         <div className={styles.profileMenu}>
             <button> My Profile</button>
             <button> Settings</button>
-            <button>Dark Mode</button>
+            <button onClick={toggleDarkMode}>Dark Mode</button>
             <button>Logout</button>
         </div>
     )

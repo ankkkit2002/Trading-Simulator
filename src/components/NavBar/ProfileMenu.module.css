@@ -36,6 +36,17 @@
 
 
 }
-
+:global(body.dark-mode) .profileMenu {
+    background-color: #1e1e1e;
+    border-color: #333;
+    
+}
+:global(body.dark-mode) .profileMenu button{
+    background-color: #1e1e1e;
+    color: white;
+}
+:global(body.dark-mode) .profileMenu :hover{
+    background-color: #121212;
+}
 
 
