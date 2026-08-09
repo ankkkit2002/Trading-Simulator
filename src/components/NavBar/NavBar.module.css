@@ -239,7 +239,7 @@
 }
 
 :global(body.dark-mode) .main_watchlist {
-    background-color: #121212;
+    background-color: #111111;
     color: white;
    
 }
