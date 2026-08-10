@@ -9,15 +9,22 @@ import Holdings from './Pages/Holdings/Holdings.jsx'
 import Dashboard from './Pages/Dashboard/Dashboard.jsx'
 import Order from './Pages/Order/Order.jsx'
 import Position from './Pages/Position/Position';
-
+import Login from './Login/Login.jsx'
+import { Navigate } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
+
     path: '/',
+    element: <Login/>
+
+  },
+  {
+    
     element: <Layout />,
     children: [
       {
-        index: true,
+        path:'dashboard',
         element: <Dashboard />
       },
       {
